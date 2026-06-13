@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Factory Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <h1>⚡ Energy Factory Pro</h1>
+        <p>
+            Produce energy, manage warehouse,
+            buy and sell products.
+        </p>
+
+        <a href="#factory">
+            <button>Start Factory</button>
+        </a>
+
+    </section>
+
+    <!-- FACTORY -->
+    <section id="factory" class="factory-section">
+
+        <h2>🏭 Energy Production</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>🪨 Raw Materials</h3>
+
+                <p>
+                    Buy raw materials for factory.
+                </p>
+
+                <button onclick="buyMaterial()">
+                    Buy Material ($100)
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <h3>⚡ Produce Energy</h3>
+
+                <p>
+                    Convert materials into energy.
+                </p>
+
+                <button onclick="produceEnergy()">
+                    Produce Energy
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="status">
+
+            <h3>📊 Factory Status</h3>
+
+            <p>💰 Money: $<span id="money">1000</span></p>
+
+            <p>🪨 Materials: <span id="materials">0</span></p>
+
+            <p>⚡ Energy: <span id="energy">0</span></p>
+
+        </div>
+
+    </section>
+
+    <!-- STORE -->
+    <section class="store-section">
+
+        <h2>🛒 Energy Market</h2>
+
+        <div class="products" id="products">
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

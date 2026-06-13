@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+}
+
+/* HERO */
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, #020617, #0f172a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 22px;
+    width: 600px;
+    max-width: 90%;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    padding: 15px 35px;
+    border: none;
+    background: #22c55e;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* FACTORY */
+
+.factory-section {
+    padding: 80px 10%;
+    min-height: 100vh;
+}
+
+.factory-section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #1e293b;
+    width: 300px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    margin-bottom: 20px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+.card button {
+    padding: 12px 25px;
+    border: none;
+    background: #3b82f6;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.status {
+    margin-top: 50px;
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.status p {
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+/* STORE */
+
+.store-section {
+    padding: 80px 10%;
+    min-height: 100vh;
+    background: #111827;
+}
+
+.store-section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.product {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.product h3 {
+    margin-bottom: 15px;
+}
+
+.product p {
+    margin-bottom: 15px;
+}
+
+.buy-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #22c55e;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #ef4444;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
